@@ -1,0 +1,100 @@
+* {
+  box-sizing : border-box;
+}
+
+body {
+  margin : 0;
+  background-color : #ff7675;
+  min-height : 100vh;
+  display : flex;
+  align-items : center;
+  justify-content : center;
+}
+
+button {
+  border-radius : 50%;
+  width : 50px;
+  height : 50px;
+  margin : 5px;
+  font-size : 24px;
+  border : none; 
+  cursor : pointer;
+}
+
+.calculator {
+  background-color : #323232;
+  width : 250px;
+  height : 410px;
+  padding : 5px;
+  display : flex;
+  flex-wrap : wrap;
+  box-shadow : 2px 2px 5px rgba(0,0,0,0.5);
+}
+
+.display {
+  width : 100%;
+  padding : 20px 10px;
+  font-size : 36px;
+  text-align : right;
+  color : white;
+  min-height : 60px;
+  position : relative;
+}
+
+.display small {
+  position : absolute;
+  font-size : 12px;
+  top : 5px;
+  right : 5px;
+  color : #EE9406;
+}
+
+button.blue {
+  background-color : #4287f5;
+  color : #fff;
+}
+
+button.dark-grey {
+  background-color : #494e54;  
+  color : #fff;
+  
+}
+
+button.light-grey {
+  background-color : #ababa7;
+  color : #fff;
+}
+
+button.big-v {
+  height : 110px;
+  border-radius : 50px;
+}
+
+button.big-h {
+  width : 110px;
+  border-radius : 50px;
+}
+
+.nums-container {
+  width : 75%;
+}
+
+.ops-container {
+  width : 25%;
+}
+
+button.ac {
+  margin-right : 50%;
+}
+
+button:active {
+  transform : scale(0.9);
+}
+
+button:focus {
+  outline: none;
+}
+
+button:hover {
+  opacity : 0.8;
+}
